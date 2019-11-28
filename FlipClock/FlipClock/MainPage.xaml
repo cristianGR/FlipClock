@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="FlipClock.MainPage">
+    <StackLayout
+        VerticalOptions="Center">
+        
+        <StackLayout
+            Margin="5,5,5,5"
+            HorizontalOptions="Center"
+            x:Name="content_flip_clock"
+            Orientation="Horizontal">
+
+            <StackLayout 
+            x:Name="hour_meter_stack_view"
+            Orientation="Horizontal"
+            HorizontalOptions="Center"
+            Margin="2,2,2,2">
+
+                <Grid 
+                    Margin="0,0,0,0"
+                    RowSpacing="2"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    BackgroundColor="YellowGreen">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20" />
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50" />
+                    </Grid.ColumnDefinitions>
+
+                    <Image 
+                        x:Name="up_image_hour_tenth_view"
+                        Source="up_0.png"
+                        Aspect="AspectFill"
+                        Grid.Row="0" Grid.Column="0"></Image>
+                    <Image
+                        x:Name="down_image_hour_tenth_view"
+                        Source="down_0.png"
+                        Aspect="AspectFill"
+                        Grid.Row="1" Grid.Column="0"></Image>
+                </Grid>
+                <Grid 
+                    Margin="0,0,0,0"
+                    RowSpacing="2"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    BackgroundColor="YellowGreen">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20" />
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50" />
+                    </Grid.ColumnDefinitions>
+
+                    <Image 
+                        x:Name="up_image_hour_unit_view"
+                        Source="up_0.png"
+                        Aspect="AspectFill"
+                        Grid.Row="0" Grid.Column="0"></Image>
+                    <Image
+                        x:Name="down_image_hour_unit_view"
+                        Source="down_0.png"
+                        Aspect="AspectFill"
+                        Grid.Row="1" Grid.Column="0"></Image>
+                </Grid>
+            </StackLayout>
+            <Label Text=":" TextColor="Black" FontSize="40" VerticalTextAlignment="Center"></Label>
+            <StackLayout 
+            x:Name="minute_meter_stack_view"
+            Orientation="Horizontal"
+            HorizontalOptions="Center"
+            Margin="2,2,2,2">
+
+                <Grid 
+                    Margin="0,0,0,0"
+                    RowSpacing="2"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    BackgroundColor="YellowGreen">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20" />
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50" />
+                    </Grid.ColumnDefinitions>
+
+                    <Image 
+                        x:Name="up_image_minute_tenth_view"
+                        Source="up_0.png"
+                        Aspect="AspectFill"
+                        Grid.Row="0" Grid.Column="0"></Image>
+                    <Image
+                        x:Name="down_image_minute_tenth_view"
+                        Source="down_0.png"
+                        Aspect="AspectFill"
+                        Grid.Row="1" Grid.Column="0"></Image>
+                </Grid>
+                <Grid 
+                    Margin="0,0,0,0"
+                    RowSpacing="2"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    BackgroundColor="YellowGreen">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20" />
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50" />
+                    </Grid.ColumnDefinitions>
+
+                    <Image 
+                        x:Name="up_image_minute_unit_view"
+                        Source="up_0.png"
+                        Aspect="AspectFill"
+                        Grid.Row="0" Grid.Column="0"></Image>
+                    <Image
+                        x:Name="down_image_minute_unit_view"
+                        Source="down_0.png"
+                        Aspect="AspectFill"
+                        Grid.Row="1" Grid.Column="0"></Image>
+                </Grid>
+            </StackLayout>
+            <Label Text=":" TextColor="Black" FontSize="40" VerticalTextAlignment="Center"></Label>
+            <StackLayout 
+            x:Name="second_meter_stack_view"
+            Orientation="Horizontal"
+            HorizontalOptions="Center"
+            Margin="2,2,2,2">
+
+                <Grid 
+                    Margin="0,0,0,0"
+                    RowSpacing="2"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    BackgroundColor="YellowGreen">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20" />
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50" />
+                    </Grid.ColumnDefinitions>
+
+                    <Image 
+                        x:Name="up_image_second_tenth_view"
+                        Source="up_0.png"
+                        Aspect="AspectFill"
+                        Grid.Row="0" Grid.Column="0"></Image>
+                    <Image
+                        x:Name="down_image_second_tenth_view"
+                        Source="down_0.png"
+                        Aspect="AspectFill"
+                        Grid.Row="1" Grid.Column="0"></Image>
+                </Grid>
+                <Grid 
+                    Margin="0,0,0,0"
+                    RowSpacing="2"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    BackgroundColor="YellowGreen">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20" />
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50" />
+                    </Grid.ColumnDefinitions>
+
+                    <Image 
+                        x:Name="up_image_second_unit_view"
+                        Source="up_0.png"
+                        Aspect="AspectFill"
+                        Grid.Row="0" Grid.Column="0"></Image>
+                    <Image
+                        x:Name="down_image_second_unit_view"
+                        Source="down_0.png"
+                        Aspect="AspectFill"
+                        Grid.Row="1" Grid.Column="0"></Image>
+                </Grid>
+            </StackLayout>
+           
+            
+   
+        </StackLayout>
+        <Button Text="Adelantar"  Clicked="MoverFlipClock_Clicked"></Button>
+        <Button Text="Poner en hora"  Clicked="PonerEnHoraFlipClock_Clicked"></Button>
+        <StackLayout 
+            Orientation="Horizontal"
+            HorizontalOptions="Center">
+
+            <Picker x:Name="Hd" >
+                <Picker.Items>
+                    <x:String>0</x:String>
+                    <x:String>1</x:String>
+                    <x:String>2</x:String>
+                </Picker.Items>
+            </Picker>
+            <Picker x:Name="Hu">
+                <Picker.Items>
+                    <x:String>0</x:String>
+                    <x:String>1</x:String>
+                    <x:String>3</x:String>
+                </Picker.Items>
+            </Picker>
+            
+            <Label Text=":" VerticalOptions="Center"></Label>
+
+            <Picker x:Name="Md">
+                <Picker.Items>
+                    <x:String>0</x:String>
+                    <x:String>1</x:String>
+                    <x:String>2</x:String>
+                    <x:String>3</x:String>
+                    <x:String>4</x:String>
+                    <x:String>5</x:String>
+                </Picker.Items>
+            </Picker>
+            <Picker x:Name="Mu">
+                <Picker.Items>
+                    <x:String>0</x:String>
+                    <x:String>1</x:String>
+                    <x:String>3</x:String>
+                    <x:String>4</x:String>
+                    <x:String>5</x:String>
+                    <x:String>6</x:String>
+                    <x:String>7</x:String>
+                    <x:String>8</x:String>
+                    <x:String>9</x:String>
+                </Picker.Items>
+            </Picker>
+            
+            <Label Text=":" VerticalOptions="Center"></Label>
+
+            <Picker x:Name="Sd">
+                <Picker.Items>
+                    <x:String>0</x:String>
+                    <x:String>1</x:String>
+                    <x:String>2</x:String>
+                    <x:String>3</x:String>
+                    <x:String>4</x:String>
+                    <x:String>5</x:String>
+                </Picker.Items>
+            </Picker>
+            <Picker x:Name="Su">
+                <Picker.Items>
+                    <x:String>0</x:String>
+                    <x:String>1</x:String>
+                    <x:String>3</x:String>
+                    <x:String>4</x:String>
+                    <x:String>5</x:String>
+                    <x:String>6</x:String>
+                    <x:String>7</x:String>
+                    <x:String>8</x:String>
+                    <x:String>9</x:String>
+                </Picker.Items>
+            </Picker>
+
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
+        
